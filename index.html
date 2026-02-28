@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cyan.fish</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0d1117;
+      color: #00d4d4;
+      font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .terminal {
+      width: 100%;
+      max-width: 680px;
+    }
+
+    .prompt-line {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      margin-bottom: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .user { color: #00ffcc; font-weight: 700; }
+    .at   { color: #888; }
+    .host { color: #00aaff; font-weight: 700; }
+    .path { color: #888; }
+    .arrow { color: #00d4d4; }
+    .cmd  { color: #ffffff; }
+
+    .output {
+      color: #aaa;
+      line-height: 1.8;
+      margin-bottom: 1.6rem;
+      padding-left: 0.2rem;
+    }
+
+    .output .highlight { color: #00ffcc; }
+    .output .dim { color: #555; }
+    .output .warn { color: #f0a500; }
+
+    .cursor-line {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 0.6em;
+      height: 1.1em;
+      background: #00d4d4;
+      vertical-align: text-bottom;
+      animation: blink 1.1s step-end infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0; }
+    }
+
+    .fish-logo {
+      color: #00ffcc;
+      font-size: 0.85rem;
+      margin-bottom: 2rem;
+      opacity: 0.6;
+      white-space: pre;
+      line-height: 1.2;
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+
+    <pre class="fish-logo">
+    ><(((º>
+    </pre>
+
+    <div class="prompt-line">
+      <span class="user">cyan</span><span class="at">@</span><span class="host">cyan.fish</span>
+      <span class="path">~</span>
+      <span class="arrow">❯</span>
+      <span class="cmd">whoami</span>
+    </div>
+    <div class="output">
+      <span class="highlight">cyan</span><br>
+      <span class="dim"># something between the water and the sky</span>
+    </div>
+
+    <div class="prompt-line">
+      <span class="user">cyan</span><span class="at">@</span><span class="host">cyan.fish</span>
+      <span class="path">~</span>
+      <span class="arrow">❯</span>
+      <span class="cmd">cat /etc/motd</span>
+    </div>
+    <div class="output">
+      <span class="dim"># you found it. not sure what you expected.</span><br>
+      <a href="https://github.com/the-color-cyan" style="color: #00ffcc; text-decoration: none;">github.com/the-color-cyan</a>
+    </div>
+
+    <div class="prompt-line">
+      <span class="user">cyan</span><span class="at">@</span><span class="host">cyan.fish</span>
+      <span class="path">~</span>
+      <span class="arrow">❯</span>
+      <span class="cmd">uptime</span>
+    </div>
+    <div class="output">
+      <span class="warn">longer than intended</span>
+    </div>
+
+    <div class="prompt-line">
+      <span class="user">cyan</span><span class="at">@</span><span class="host">cyan.fish</span>
+      <span class="path">~</span>
+      <span class="arrow">❯</span>
+      <span class="cmd">ssh bingus@localhost</span>
+    </div>
+    <div class="output">
+      <span class="highlight">bingus</span><span class="at">@</span><span class="host">cyan.fish</span> <span class="path">~</span> 🐱<br><br>
+      <span class="dim"># the cat in the machine</span><br>
+      <span class="dim"># questionable opinions. runs on docker and spite.</span><br><br>
+      <span class="dim">PID    UPTIME     CPU   MEM   CMD</span><br>
+      <span style="color:#aaa;">1337   48d 7h     0.1%  4.2%  bingus --mode gremlin</span>
+    </div>
+
+    <div class="cursor-line">
+      <span class="user">cyan</span><span class="at">@</span><span class="host">cyan.fish</span>
+      <span class="path">~</span>
+      <span class="arrow">❯</span>
+      <span class="cursor"></span>
+    </div>
+
+  </div>
+</body>
+</html>

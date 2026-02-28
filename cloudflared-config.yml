@@ -1,0 +1,7 @@
+tunnel: cyan-fish
+credentials-file: /home/cyan/.cloudflared/<tunnel-id>.json
+
+ingress:
+  - hostname: cyan.fish
+    service: http://localhost:8080
+  - service: http_status:404
