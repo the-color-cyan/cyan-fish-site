@@ -1,0 +1,30 @@
+package.json
+  s_dcacee57e1d712::t_17734c09181055 1-9,11-12
+  s_dcacee57e1d712::t_ffba9a82be7191 10
+.gitignore
+  s_dcacee57e1d712::t_d5a54837ad703e 1-4
+wrangler.toml
+  s_dcacee57e1d712::t_e599b7a37592f3 1-5
+.github/workflows/deploy.yml
+  s_dcacee57e1d712::t_59e87bcb0a7d79 1-13,15-16,18-25,27-30
+  s_dcacee57e1d712::t_31beaaacebbdfc 14,17,26
+README.md
+  s_dcacee57e1d712::t_486fd3bfeeff20 1-11,13-18
+  s_dcacee57e1d712::t_64a6fb5770b8f6 12,19-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.9",
+  "base_commit_sha": "60b15b27bf8a9bcb7ebfdbab80d84e3f54298be7",
+  "prompts": {},
+  "sessions": {
+    "s_dcacee57e1d712": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f1983-d360-7ad6-ad97-df640ba59a43",
+        "model": "kimi-for-coding"
+      },
+      "human_author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
