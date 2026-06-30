@@ -1,6 +1,6 @@
 # cyan.fish
 
-Static personal site served by a Cloudflare Worker using [Workers Static Assets](https://developers.cloudflare.com/workers/static-assets/).
+Static personal site served via Cloudflare Worker using [Workers Static Assets](https://developers.cloudflare.com/workers/static-assets/).
 
 ## Develop locally
 
@@ -15,7 +15,7 @@ npm run dev
 npm run deploy
 ```
 
-Requires a Cloudflare account and `wrangler` authentication (`npx wrangler login`).
+Requires a Cloudflare account and `wrangler` auth (`npx wrangler login`).
 
 ## Deploy via GitHub Actions
 
