@@ -1,0 +1,19 @@
+public/index.html
+  s_8d5cdd10d8a4ac::t_b2d770346cfc55 8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "574dcbca41c1723cfdfea4f0fb4827c2dd3c9050",
+  "prompts": {},
+  "sessions": {
+    "s_8d5cdd10d8a4ac": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f19db-0a6c-75bd-81c4-20bd83e1fd37",
+        "model": "gpt-5.5"
+      },
+      "human_author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
